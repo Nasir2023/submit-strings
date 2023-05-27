@@ -13,9 +13,9 @@ report = f'{player1} scored in the {goal_0}nd minute\n{player2} scored in the {g
 print(report)
 #part 2
 player= 'Ruud Gullit'
-#spatie= player.find(' ')
-first_name= player[ :4]
-last_name= player[5:]
+spatie= player.find(' ')
+first_name= player[:spatie]
+last_name= player[spatie + 1:]
 print(last_name)
 last_name_len= len(last_name)
 name_short=player [0:1] + '. ' + last_name
